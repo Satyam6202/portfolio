@@ -505,7 +505,7 @@ footer .card li:hover{
     font-weight:500;
 }
 
-=============================
+
 /*        GLOBAL ANIMATIONS      */
 /* ============================= */
 
@@ -676,3 +676,486 @@ header nav a:hover::after {
     width: 0;
     animation: typing 4s steps(10, end) infinite;
 }
+
+
+
+
+```css
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+/* ---------- TABLET / LAPTOP ---------- */
+@media (max-width: 1100px) {
+
+    header nav {
+        margin-left: 0;
+        gap: 25px;
+    }
+
+    .home,
+    .about,
+    .project,
+    .contactt,
+    footer,
+    .footer {
+        width: 100%;
+    }
+
+    .home {
+        padding: 120px 40px 60px;
+        gap: 30px;
+    }
+
+    .home .right {
+        padding-left: 0;
+    }
+
+    .home .right h1 {
+        font-size: 45px;
+    }
+
+    .home .right h2 {
+        font-size: 30px;
+    }
+
+    .about .about-content {
+        padding: 0 30px;
+        gap: 25px;
+    }
+
+    .about .left {
+        gap: 15px;
+    }
+
+    .about .left .card {
+        width: 240px;
+    }
+
+    .about .about-content .rigth img {
+        width: 330px;
+        height: 330px;
+    }
+
+    .project .main-project .card {
+        width: 45%;
+    }
+
+    .project .main-project .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contactt form input,
+    .contactt form textarea,
+    .contactt form button {
+        max-width: 420px;
+        width: 90%;
+    }
+
+    footer .card {
+        width: 30%;
+    }
+}
+
+
+/* ---------- TABLET ---------- */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    header {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+
+    header .logo {
+        font-size: 28px;
+    }
+
+    header nav {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px 25px;
+        order: 3;
+        padding-top: 10px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    header #csk {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+
+    /* HOME */
+    .home {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        padding: 170px 25px 60px;
+        gap: 20px;
+    }
+
+    .home img {
+        width: min(300px, 75vw);
+        padding-top: 10px;
+    }
+
+    .home .right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .home .right h1 {
+        font-size: 42px;
+    }
+
+    .home .right h2 {
+        font-size: 28px;
+    }
+
+    .home .right p {
+        line-height: 1.6;
+    }
+
+    .home .right .social-media {
+        justify-content: center;
+    }
+
+    .home .right .btn {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    /* ABOUT */
+    .about {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 20px 60px;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .about .left {
+        width: 100%;
+        padding-top: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about .left .card {
+        width: min(320px, 90vw);
+    }
+
+    .about .rigth {
+        padding-top: 30px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .about .about-content .rigth img {
+        width: min(330px, 80vw);
+        height: auto;
+    }
+
+
+    /* PROJECT */
+    .project {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 20px 60px;
+    }
+
+    .project .main-project {
+        flex-direction: column;
+        padding: 50px 0 0;
+    }
+
+    .project .main-project .card {
+        width: min(500px, 100%);
+    }
+
+    .project .main-project .card img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* CONTACT */
+    .contactt {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 20px 60px;
+    }
+
+    .contactt .main-contact {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .contactt .main-contact .dirent-contact {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contactt .main-contact .card {
+        width: min(300px, 100%);
+    }
+
+    .contactt form {
+        width: 100%;
+        padding-top: 35px;
+    }
+
+    .contactt form input,
+    .contactt form textarea,
+    .contactt form button {
+        width: 100%;
+        max-width: 420px;
+    }
+
+
+    /* FOOTER */
+    footer {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 30px 20px;
+    }
+
+    footer .card {
+        width: min(400px, 100%);
+    }
+
+    .footer {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 480px) {
+
+    header {
+        padding: 12px 15px;
+    }
+
+    header .logo {
+        font-size: 24px;
+    }
+
+    header nav {
+        gap: 10px 15px;
+    }
+
+    header nav a {
+        font-size: 12px;
+    }
+
+    header #csk {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+
+
+    /* HOME */
+    .home {
+        padding: 155px 18px 45px;
+    }
+
+    .home img {
+        width: min(250px, 70vw);
+    }
+
+    .home .right h3 {
+        font-size: 16px;
+    }
+
+    .home .right h1 {
+        font-size: 32px;
+    }
+
+    .home .right h2 {
+        font-size: 22px;
+    }
+
+    .home .right p {
+        font-size: 14px;
+    }
+
+    .home .right .social-media {
+        gap: 14px;
+    }
+
+    .home .right .social-media li {
+        width: 36px;
+        height: 36px;
+        font-size: 17px;
+    }
+
+    .home .right .btn {
+        gap: 12px;
+    }
+
+    .home .right .btn .hire,
+    .home .right .btn .contact {
+        font-size: 16px;
+        padding: 9px 18px;
+    }
+
+
+    /* ABOUT */
+    .about,
+    .project,
+    .contactt {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about h2,
+    .project h1,
+    .contactt h1 {
+        font-size: 25px;
+    }
+
+    .about .left {
+        padding-top: 35px;
+    }
+
+    .about .left .card {
+        width: 100%;
+        height: auto;
+        min-height: 180px;
+    }
+
+    .about .about-content .rigth img {
+        width: min(280px, 90vw);
+    }
+
+
+    /* PROJECT */
+    .project .main-project {
+        gap: 20px;
+        padding-top: 40px;
+    }
+
+    .project .main-project .card {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .project .main-project p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .project .main-project button {
+        font-size: 16px;
+    }
+
+
+    /* CONTACT */
+    .contactt .main-contact .dirent-contact {
+        flex-direction: column;
+    }
+
+    .contactt .main-contact .card {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contactt form input,
+    .contactt form textarea,
+    .contactt form button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+    }
+
+    footer .card {
+        width: 100%;
+    }
+
+    footer .card a {
+        justify-content: center;
+    }
+
+    .footer h1 {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+
+    /* TYPING TEXT */
+    #typing-text {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ---------- VERY SMALL MOBILE ---------- */
+@media (max-width: 360px) {
+
+    header nav {
+        gap: 8px 12px;
+    }
+
+    header nav a {
+        font-size: 11px;
+    }
+
+    .home .right h1 {
+        font-size: 28px;
+    }
+
+    .home .right h2 {
+        font-size: 20px;
+    }
+
+    .home .right .btn {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .home .right .btn .hire,
+    .home .right .btn .contact {
+        width: 100%;
+    }
+}
+
+
+/* FIX: invalid transform */
+.contactt .main-contact .card:hover {
+    transform: scale(1.03);
+}
+
+
+/* Prevent horizontal scrolling */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+```
